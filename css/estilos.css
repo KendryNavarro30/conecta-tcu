@@ -1,0 +1,578 @@
+/* CONECTA TCU - CSS COMPARTIDO
+   Hoja de estilos externa
+   Se emplean selectores, colores, tipografía, márgenes,
+   relleno, bordes y Flexbox.
+   Las columnas que se adaptan a celulares son de Bootstrap */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    color: #25354b;
+    background-color: #f7f5f0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3 {
+    color: #152b46;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+a {
+    color: #254b76;
+}
+
+.container {
+    max-width: 1160px;
+}
+
+.contenedor {
+    width: 92%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* Encabezado y navegación */
+.encabezado {
+    padding: 15px 0;
+    border-top: 4px solid #b9955d;
+    border-bottom: 1px solid #e5e0d7;
+    background-color: #ffffff;
+}
+
+.barra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    margin: 8px 22px 8px 0;
+    color: #152b46;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.marca strong {
+    color: #8b642f;
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0;
+}
+
+.menu a {
+    margin: 4px 22px 4px 0;
+    color: #505e73;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.accesos {
+    margin: 8px 0;
+}
+
+.enlace-ingreso {
+    margin-right: 18px;
+    color: #152b46;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Botones compartidos y personalización de Bootstrap */
+.btn, .boton {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 4px 0;
+    border: 1px solid #152b46;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary, .boton {
+    color: #ffffff;
+    background-color: #152b46;
+    border-color: #152b46;
+}
+
+.btn-light {
+    color: #152b46;
+    background-color: #ffffff;
+    border-color: #d3c5ae;
+}
+
+/* Portada de inicio */
+.portada {
+    padding: 66px 0;
+    border-bottom: 5px solid #b9955d;
+    background-color: #152b46;
+}
+
+.fila-portada {
+    align-items: center;
+}
+
+.texto-portada {
+    padding-top: 22px;
+    padding-bottom: 28px;
+}
+
+.etiqueta {
+    margin-bottom: 18px;
+    color: #805c28;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+}
+
+.texto-portada .etiqueta {
+    color: #e0c795;
+}
+
+.texto-portada h1 {
+    max-width: 530px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-size: 46px;
+    line-height: 1.15;
+}
+
+.descripcion {
+    max-width: 510px;
+    margin-bottom: 27px;
+    color: #d5deea;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.botones-portada a {
+    margin-right: 9px;
+    margin-bottom: 9px;
+}
+
+.portada .btn-primary {
+    color: #152b46;
+    background-color: #ddc398;
+    border-color: #ddc398;
+}
+
+.portada .btn-light {
+    color: #ffffff;
+    background-color: #213a58;
+    border-color: #71829a;
+}
+
+.nota {
+    margin: 20px 0 0;
+    color: #637087;
+    font-size: 12px;
+}
+
+.texto-portada .nota {
+    color: #d0d8e3;
+}
+
+.tarjeta-destacada {
+    margin: 18px 0;
+    padding: 18px;
+    border: 1px solid #ede5d7;
+    border-top: 5px solid #c0a06a;
+    border-radius: 16px;
+    background-color: #fffcf7;
+}
+
+.tarjeta-destacada h2 {
+    margin-bottom: 18px;
+    font-size: 29px;
+}
+
+.tarjeta-destacada .card-text {
+    color: #566378;
+    font-size: 14px;
+}
+
+.lista-conexion {
+    margin: 22px 0 0;
+    padding-left: 18px;
+    color: #526077;
+    font-size: 13px;
+}
+
+.lista-conexion li {
+    padding: 9px 0;
+    border-bottom: 1px solid #e4ded3;
+}
+
+.lista-conexion strong {
+    color: #152b46;
+}
+
+/* Proceso y perfiles */
+.seccion {
+    padding: 62px 0;
+}
+
+.seccion h2 {
+    margin-bottom: 17px;
+    font-size: 35px;
+}
+
+.introduccion {
+    max-width: 700px;
+    margin-bottom: 32px;
+    color: #5c697d;
+    font-size: 15px;
+}
+
+.paso {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid #e3ded4;
+    border-top: 3px solid #b9955d;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.seccion .col-sm-6 {
+    margin-bottom: 24px;
+}
+
+.numero {
+    margin-bottom: 14px;
+    color: #805c28;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+}
+
+.paso h3 {
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.paso p {
+    color: #59677a;
+    font-size: 14px;
+}
+
+.seccion-perfiles {
+    border-top: 1px solid #e5dfd4;
+    border-bottom: 1px solid #e5dfd4;
+    background-color: #efede6;
+}
+
+.tarjeta-perfil {
+    height: 100%;
+    padding: 17px;
+    border: 1px solid #ded6c8;
+    border-top: 4px solid #152b46;
+    border-radius: 13px;
+    background-color: #ffffff;
+}
+
+.seccion-perfiles .col-sm-4 {
+    margin-bottom: 24px;
+}
+
+.tarjeta-perfil h3 {
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+
+.tarjeta-perfil p, .tarjeta-perfil li {
+    color: #57657a;
+    font-size: 13px;
+}
+
+.tarjeta-perfil ul {
+    padding-left: 18px;
+}
+
+.tarjeta-perfil li {
+    margin-bottom: 11px;
+}
+
+.tarjeta-perfil .letra-perfil {
+    width: 45px;
+    margin-bottom: 22px;
+    padding: 9px;
+    border: 1px solid #dac9aa;
+    border-radius: 10px;
+    color: #745321;
+    background-color: #f5eddf;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tarjeta-perfil .letra-organizacion {
+    color: #ffffff;
+    background-color: #152b46;
+    border-color: #152b46;
+}
+
+.tarjeta-perfil .letra-universidad {
+    color: #152b46;
+    background-color: #e8edf3;
+    border-color: #c1cbd9;
+}
+
+.nota-cuentas {
+    margin: 20px 0 0;
+    color: #59677b;
+    font-size: 12px;
+    text-align: center;
+}
+
+.invitacion {
+    padding: 42px;
+    border-left: 5px solid #c3a06a;
+    border-radius: 14px;
+    color: #dde4ef;
+    background-color: #152b46;
+}
+
+.invitacion .etiqueta {
+    color: #e0c795;
+}
+
+.invitacion h2 {
+    color: #ffffff;
+}
+
+.invitacion p {
+    max-width: 650px;
+}
+
+/* Registro e inicio de sesión */
+.pagina-formulario {
+    padding: 36px 0 58px;
+    background-color: #f7f5f0;
+}
+
+.pagina-formulario .container > .row {
+    align-items: flex-start;
+}
+
+
+.presentacion-formulario {
+    margin-bottom: 18px;
+    padding: 28px;
+    border: 12px solid #f7f5f0;
+    border-radius: 29px;
+    color: #e3e9f2;
+    background-color: #152b46;
+}
+
+.presentacion-formulario > a {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 7px 12px;
+    border: 1px solid #64748c;
+    border-radius: 6px;
+    color: #f0dfbd;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.presentacion-formulario .etiqueta {
+    margin-bottom: 18px;
+    color: #e0c795;
+    font-size: 10px;
+    letter-spacing: 1.6px;
+}
+
+.presentacion-formulario h1 {
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.presentacion-formulario p, .presentacion-formulario li {
+    color: #dbe3ee;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.presentacion-formulario ol, .resumen-perfiles {
+    margin-top: 26px;
+    padding-left: 19px;
+}
+
+.presentacion-formulario li {
+    margin-bottom: 13px;
+    padding: 7px 0;
+    border-bottom: 1px solid #3d5069;
+}
+
+.presentacion-formulario strong {
+    color: #f0dfbd;
+}
+
+.nota-institucional {
+    margin-top: 28px;
+    padding: 18px;
+    border: 1px solid #5c6e87;
+    border-left: 3px solid #c3a06a;
+    border-radius: 9px;
+    background-color: #213952;
+}
+
+.nota-institucional p {
+    margin-bottom: 12px;
+    color: #e0e6ef;
+    font-size: 12px;
+}
+
+.nota-institucional a {
+    color: #efdab2;
+    font-size: 12px;
+}
+
+.tarjeta-formulario {
+    margin: 12px 0;
+    padding: 16px;
+    border: 1px solid #e0d8ca;
+    border-top: 4px solid #b9955d;
+    border-radius: 17px;
+    background-color: #ffffff;
+}
+
+.tarjeta-formulario h2 {
+    margin-bottom: 12px;
+    color: #152b46;
+    font-size: 35px;
+}
+
+.tarjeta-formulario .card-body {
+    padding: 18px;
+}
+
+.tarjeta-formulario .card-body > p {
+    color: #5b687b;
+    font-size: 13px;
+}
+
+.tarjeta-formulario .card-body > .etiqueta {
+    margin-bottom: 14px;
+    color: #805c28;
+    font-size: 10px;
+}
+
+.tarjeta-formulario .alert {
+    margin: 22px 0;
+    padding: 12px 14px;
+    border: 1px solid #e6d8bd;
+    border-left: 3px solid #b9955d;
+    border-radius: 7px;
+    color: #6c542f;
+    background-color: #faf5ea;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.form-label {
+    margin-bottom: 8px;
+    color: #34455c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form-control, .form-select {
+    min-height: 47px;
+    padding: 11px 12px;
+    border: 1px solid #b1bac6;
+    border-radius: 7px;
+    color: #25354b;
+    background-color: #fbfaf7;
+    font-size: 14px;
+}
+
+.ayuda {
+    margin: 8px 0 0;
+    color: #647187;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.aviso-perfil {
+    padding: 12px 14px;
+    border-left: 3px solid #b9955d;
+    border-radius: 0 6px 6px 0;
+    color: #4d6079;
+    background-color: #f1f4f8;
+    font-size: 12px;
+}
+
+.mensaje {
+    margin: 16px 0;
+    color: #254b76;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.boton-formulario {
+    width: 100%;
+    min-height: 49px;
+    margin-top: 8px;
+    color: #152b46;
+    background-color: #ddc398;
+    border-color: #c4a16a;
+    font-size: 14px;
+}
+
+.cambio-formulario {
+    margin: 26px 0 0;
+    padding-top: 21px;
+    border-top: 1px solid #e8e1d6;
+    text-align: center;
+    font-size: 12px;
+}
+
+.cambio-formulario a {
+    color: #254b76;
+    font-weight: bold;
+}
+
+/* Pie de página compartido */
+.pie {
+    padding: 28px 0;
+    border-top: 3px solid #b9955d;
+    background-color: #152b46;
+}
+
+.pie-interior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pie p {
+    margin: 8px 20px 8px 0;
+    color: #d2dbe7;
+    font-size: 12px;
+}
+
+.pie strong {
+    color: #efdab2;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: normal;
+}
