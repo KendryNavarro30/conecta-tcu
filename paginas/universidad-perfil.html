@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conecta TCU: gestión de solicitudes y aprobación de proyectos de trabajo comunal universitario.">
+  <title>Perfil de la universidad | Conecta TCU</title>
+  <link rel="stylesheet" href="../css/universidad.css">
+  <script src="../js/universidad.js" defer></script>
+</head>
+<body data-pagina="perfil">
+<header class="barra-superior">
+  <div class="contenedor barra-interior">
+    <a class="marca" href="../index.html" aria-label="Conecta TCU, ir al inicio">Conecta <span>TCU</span></a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="universidad-panel.html">Panel</a>
+<a href="universidad-solicitudes.html">Solicitudes</a>
+<a href="universidad-perfil.html" class="activo" aria-current="page">Mi perfil</a>
+<a href="../index.html">Inicio</a>
+    </nav>
+    <div class="acciones-cabecera"><span class="sello">Universidad</span></div>
+  </div>
+</header>
+<section class="hero"><div class="contenedor hero-interior">
+  <div><span class="etiqueta">INFORMACIÓN INSTITUCIONAL</span><h1>Tu universidad, parte de cada conexión.</h1><p>Mantén actualizados los datos de la institución que acompaña los proyectos de TCU.</p></div>
+  <aside class="hero-tarjeta"><span class="etiqueta">PERFIL INSTITUCIONAL</span><div class="destacado-titulo">Una comunicación más cercana.</div><p>La información de esta pantalla identifica a la universidad dentro de la demostración.</p><ul><li><strong>Institución:</strong> nombre de la universidad.</li><li><strong>Contacto:</strong> coordinación y correo institucional.</li><li><strong>Ubicación:</strong> teléfono y sede.</li></ul></aside>
+</div></section>
+<main class="contenedor seccion" id="contenido">
+<div class="encabezado-seccion"><div><span class="etiqueta">DATOS DE LA UNIVERSIDAD</span><h2 class="titulo-elegante">Perfil de la universidad</h2><p>Consulta o modifica los datos institucionales.</p></div><a class="boton boton-contorno" href="universidad-panel.html">Volver al panel</a></div>
+<div class="cuadricula cuadricula-lateral">
+  <section class="panel"><form id="formularioPerfil" class="formulario">
+    <div class="campo campo-completo"><label for="nombre">Nombre de la universidad *</label><input id="nombre" required maxlength="100"></div>
+    <div class="campo"><label for="encargado">Persona o área encargada *</label><input id="encargado" required maxlength="100"></div>
+    <div class="campo"><label for="correoInstitucional">Correo institucional *</label><input id="correoInstitucional" type="email" required maxlength="100"></div>
+    <div class="campo"><label for="telefono">Teléfono de contacto</label><input id="telefono" type="tel" maxlength="35"></div>
+    <div class="campo"><label for="sede">Sede o ubicación</label><input id="sede" maxlength="100"></div>
+    <div class="campo campo-completo"><button class="boton boton-azul" type="submit">Guardar cambios</button></div>
+  </form><div id="mensajePerfil" class="oculto" role="status" aria-live="polite"></div></section>
+  <aside class="panel panel-crema"><h3>Información importante</h3><p>Las solicitudes recibidas se muestran según el <strong>nombre de la universidad</strong>.</p><p>Si cambias ese nombre, el panel mostrará las solicitudes cuyo nombre coincida con el nuevo perfil.</p><p class="resumen">Este formulario guarda los cambios únicamente en el navegador actual.</p></aside>
+</div>
+</main>
+<footer class="pie-pagina"><div class="contenedor pie-interior"><div><strong>Conecta TCU</strong> · Tecnología con propósito social.</div><div>Proyecto académico · <a href="../index.html">Volver al inicio</a></div></div></footer>
+</body>
+</html>
