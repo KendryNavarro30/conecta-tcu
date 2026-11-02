@@ -22,17 +22,36 @@
   </div>
 </header>
 <section class="hero"><div class="contenedor hero-interior">
-  <div><span class="etiqueta">BANDEJA DE ENTRADA</span><h1>Cada solicitud es una oportunidad de ayudar.</h1><p>Encuentra fácilmente las propuestas presentadas por estudiantes y revisa la información antes de tomar una decisión.</p></div>
-  <aside class="hero-tarjeta"><span class="etiqueta">ORGANIZA TU REVISIÓN</span><div class="destacado-titulo">Encuentra lo que necesitas.</div><p>Utiliza los filtros para localizar una solicitud por nombre, proyecto o estado.</p><ul><li><strong>Busca:</strong> por estudiante, proyecto u organización.</li><li><strong>Filtra:</strong> pendientes, aprobadas o rechazadas.</li><li><strong>Abre:</strong> el detalle para registrar tu decisión.</li></ul></aside>
+  <div><span class="etiqueta">BANDEJA DE ENTRADA</span>
+    <h1>Cada solicitud es una oportunidad de ayudar.</h1>
+    <p>Encuentra fácilmente las propuestas presentadas por estudiantes y revisa la información antes de tomar una decisión.</p></div>
+  <aside class="hero-tarjeta"><span class="etiqueta">ORGANIZA TU REVISIÓN</span>
+    <div class="destacado-titulo">Encuentra lo que necesitas.</div>
+    <p>Utiliza los filtros para localizar una solicitud por nombre, proyecto o estado.</p>
+    <ul><li><strong>Busca:</strong> por estudiante, proyecto u organización.</li>
+      <li><strong>Filtra:</strong> pendientes, aprobadas o rechazadas.</li>
+      <li><strong>Abre:</strong> el detalle para registrar tu decisión.</li></ul></aside>
 </div></section>
 <main class="contenedor seccion" id="contenido">
-<div class="encabezado-seccion"><div><span class="etiqueta">BANDEJA DE SOLICITUDES</span><h2 class="titulo-elegante">Solicitudes recibidas</h2><p>Universidad: <strong id="universidadListado">Universidad</strong></p></div><a class="boton boton-contorno" href="universidad-panel.html">Volver al panel</a></div>
-<section class="panel"><div class="filtros"><div class="campo"><label for="filtroTexto">Buscar solicitud</label><input id="filtroTexto" type="search" placeholder="Nombre, proyecto u organización"></div><div class="campo"><label for="filtroEstado">Filtrar por estado</label><select id="filtroEstado"><option>Todas</option><option>Pendiente</option><option>Aprobada</option><option>Rechazada</option></select></div></div>
+<div class="encabezado-seccion"><div><span class="etiqueta">BANDEJA DE SOLICITUDES</span>
+  <h2 class="titulo-elegante">Solicitudes recibidas</h2>
+  <p>Universidad: <strong id="universidadListado">Universidad</strong></p>
+</div><a class="boton boton-contorno" href="universidad-panel.html">Volver al panel</a></div>
+<section class="panel"><div class="filtros"><div class="campo"><label for="filtroTexto">Buscar solicitud</label>
+  <input id="filtroTexto" type="search" placeholder="Nombre, proyecto u organización"></div><div class="campo">
+    <label for="filtroEstado">Filtrar por estado</label><select id="filtroEstado">
+      <option>Todas</option><option>Pendiente</option><option>Aprobada</option>
+      <option>Rechazada</option></select></div></div>
   <p id="cantidadResultados" class="resumen" aria-live="polite"></p>
-  <div class="tabla-contenedor"><table class="tabla"><thead><tr><th>N.º</th><th>Estudiante</th><th>Proyecto</th><th>Fecha</th><th>Estado</th><th>Acción</th></tr></thead><tbody id="tablaSolicitudes"></tbody></table></div>
+  <div class="tabla-contenedor"><table class="tabla"><thead>
+    <tr><th>N.º</th><th>Estudiante</th><th>Proyecto</th>
+      <th>Fecha</th><th>Estado</th><th>Acción</th></tr>
+    </thead><tbody id="tablaSolicitudes"></tbody></table></div>
   <div id="tablaVacia" class="oculto">No hay solicitudes que coincidan con los filtros. Revisa también el nombre de la universidad en Mi perfil.</div>
 </section>
 </main>
-<footer class="pie-pagina"><div class="contenedor pie-interior"><div><strong>Conecta TCU</strong> · Tecnología con propósito social.</div><div>Proyecto académico · <a href="../index.html">Volver al inicio</a></div></div></footer>
+<footer class="pie-pagina"><div class="contenedor pie-interior"><div>
+  <strong>Conecta TCU</strong> · Tecnología con propósito social.</div>
+  <div>Proyecto académico · <a href="../index.html">Volver al inicio</a></div></div></footer>
 </body>
 </html>
