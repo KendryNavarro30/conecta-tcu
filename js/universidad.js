@@ -7,9 +7,23 @@ var CLAVE_ESTUDIANTE = 'conecta_tcu_correo_estudiante_persona3';
 
 function datosEjemplo() {
     return [
-        { id: 1, estudiante: 'Ana Ramírez', correo: 'ana@ejemplo.com', universidad: 'Universidad Fidélitas', carrera: 'Ingeniería en Sistemas', proyecto: 'Sistema de inventario comunitario', organizacion: 'Asociación Manos Unidas', actividades: 'Crear una herramienta sencilla para registrar materiales y existencias.', horas: '150', documento: 'propuesta-ana.pdf', fecha: '28/10/2026', estado: 'Pendiente', observaciones: '' },
-        { id: 2, estudiante: 'Luis Morales', correo: 'luis@ejemplo.com', universidad: 'Universidad Fidélitas', carrera: 'Ingeniería en Sistemas', proyecto: 'Sitio web para una fundación', organizacion: 'Fundación Crecer', actividades: 'Diseñar un sitio web para mostrar las actividades de la fundación.', horas: '150', documento: 'propuesta-luis.pdf', fecha: '26/10/2026', estado: 'Aprobada', observaciones: 'La propuesta cumple con lo solicitado.' },
-        { id: 3, estudiante: 'María Solís', correo: 'maria@ejemplo.com', universidad: 'Universidad Fidélitas', carrera: 'Ingeniería en Sistemas', proyecto: 'Registro de voluntariado', organizacion: 'Comunidad Verde', actividades: 'Organizar un registro digital de personas voluntarias.', horas: '120', documento: 'propuesta-maria.pdf', fecha: '24/10/2026', estado: 'Rechazada', observaciones: 'Se necesita ampliar la descripción de las actividades.' }
+        { id: 1, estudiante: 'Ana Ramírez', correo: 'ana@gmail.com', 
+            universidad: 'Universidad Fidélitas', carrera: 'Ingeniería en Sistemas',
+             proyecto: 'Sistema de inventario comunitario', organizacion: 'Asociación Manos Unidas',
+              actividades: 'Crear una herramienta sencilla para registrar materiales y existencias.',
+               horas: '150', documento: 'propuesta-ana.pdf', fecha: '28/10/2026', estado: 'Pendiente', observaciones: '' },
+        { id: 2, estudiante: 'Max Zamora', correo: 'max@gmail.com',
+             universidad: 'Universidad Fidélitas', carrera: 'Ingeniería en Sistemas',
+              proyecto: 'Sitio web para una fundación', organizacion: 'Fundación Crecer',
+               actividades: 'Diseñar un sitio web para mostrar las actividades de la fundación.',
+                horas: '150', documento: 'propuesta-max.pdf', fecha: '26/10/2026', estado: 'Aprobada',
+                 observaciones: 'La propuesta cumple con lo solicitado.' },
+        { id: 3, estudiante: 'Amber Navarro', correo: 'amber@gmail.com',
+             universidad: 'Universidad Fidélitas', carrera: 'Ingeniería en Sistemas',
+              proyecto: 'Registro de voluntariado', organizacion: 'Comunidad Verde',
+               actividades: 'Organizar un registro digital de personas voluntarias.',
+                horas: '120', documento: 'propuesta-amber.pdf', fecha: '24/10/2026',
+                 estado: 'Rechazada', observaciones: 'Se necesita ampliar la descripción de las actividades.' }
     ];
 }
 
@@ -39,7 +53,7 @@ function obtenerPerfil() {
     return {
         nombre: 'Universidad Fidélitas',
         encargado: 'Coordinación de TCU',
-        correo: 'tcu@ejemplo.com',
+        correo: 'tcu@gmail.com',
         telefono: '0000-0000',
         sede: 'San José, Costa Rica'
     };
