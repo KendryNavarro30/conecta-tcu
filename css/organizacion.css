@@ -1,0 +1,200 @@
+
+.org-pagina {
+    background-color: #f7f5f0;
+    color: #25354b;
+}
+
+.org-pagina h1 { font-size: 36px; }
+.org-pagina h2 { font-size: 25px; }
+.org-pagina h3 { font-size: 18px; }
+
+.org-pagina .btn {
+    min-height: 44px;
+    font-size: 12px;
+}
+
+.org-pagina .btn:focus, .org-pagina a:focus {
+    outline: 3px solid #a8874f;
+    outline-offset: 3px;
+}
+
+.org-pagina .form-control:focus, .org-pagina .form-select:focus {
+    border-color: #254b76;
+    outline: 2px solid #b6c8dc;
+}
+
+/* Encabezado y navegación del módulo. */
+.org-rol {
+    margin: 8px 15px 8px 0;
+    color: #6c5838;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+}
+
+.org-cuenta, .org-identidad {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.org-cuenta { margin: 8px 0; }
+.org-cuenta a { color: #152b46; font-size: 12px; text-decoration: none; font-weight: bold; }
+.org-cuenta span { display: block; color: #5b687b; font-size: 11px; }
+
+.org-avatar, .org-iniciales {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #d3c5ae;
+    border-radius: 50%;
+    background-color: #f4edde;
+    color: #604722;
+    font-size: 12px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.org-navegacion { background-color: #fff; border-bottom: 1px solid #e5e0d7; }
+.org-enlaces { display: flex; flex-wrap: wrap; gap: 4px 27px; }
+.org-enlaces a { padding: 16px 0 13px; border-bottom: 3px solid transparent; color: #505e73; font-size: 12px; text-decoration: none; }
+.org-enlaces .org-activo { border-bottom-color: #a8874f; color: #152b46; font-weight: bold; }
+
+/* Espacio principal y títulos. */
+.org-contenido { padding-top: 36px; padding-bottom: 35px; }
+.org-titulo-pagina { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; margin-bottom: 24px; }
+.org-titulo-pagina .etiqueta { margin-bottom: 12px; }
+.org-titulo-pagina h1 { margin-bottom: 12px; }
+.org-titulo-pagina > div { max-width: 760px; }
+.org-descripcion { margin-bottom: 18px; color: #5b687b; font-size: 13px; line-height: 1.8; }
+
+.org-bienvenida {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 36px;
+    border: 1px solid #213a58;
+    border-bottom: 4px solid #b9955d;
+    border-radius: 14px;
+    background-color: #152b46;
+}
+
+.org-bienvenida > div:first-child { flex: 1 1 430px; min-width: 0; }
+.org-bienvenida .etiqueta { color: #e0c795; margin-bottom: 18px; }
+.org-bienvenida h1 { margin-bottom: 20px; color: #fff; font-size: 39px; line-height: 1.2; }
+.org-bienvenida p { max-width: 610px; color: #d5deea; font-size: 13px; }
+.org-pagina .org-boton-dorado { margin-top: 9px; color: #152b46; border-color: #ddc398; background-color: #ddc398; }
+.org-boton-dorado span { margin-left: 15px; }
+
+.org-sello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 165px;
+    margin: 12px;
+    border: 1px solid #9a8767;
+    border-radius: 50%;
+    background-color: #213a58;
+    color: #efdab2;
+    flex-shrink: 0;
+}
+.org-sello span { font-size: 9px; letter-spacing: 1.6px; }
+.org-sello strong { font-family: Georgia, serif; font-weight: normal; font-size: 52px; line-height: 1.3; }
+
+/* Tarjetas del resumen. */
+.org-estadisticas { margin-top: 19px; margin-bottom: 25px; }
+.org-metrica { height: 100%; padding: 22px; border: 1px solid #e4ded2; border-top: 3px solid #b9955d; border-radius: 10px; background-color: #fff; }
+.org-estadisticas > div { margin-bottom: 12px; }
+.org-metrica > span { color: #5d6570; font-size: 9px; font-weight: bold; letter-spacing: 1px; }
+.org-metrica strong { display: block; margin: 10px 0 5px; color: #152b46; font-family: Georgia, serif; font-size: 40px; font-weight: normal; line-height: 1.2; }
+.org-metrica p { margin: 0; color: #5b687b; font-size: 12px; }
+.org-encabezado-seccion { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 16px; }
+.org-encabezado-seccion .etiqueta { margin-bottom: 9px; }
+.org-encabezado-seccion h2 { margin-bottom: 0; }
+.org-encabezado-seccion > a { color: #254b76; font-size: 12px; }
+.org-lista-persona { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 12px; padding: 19px; border: 1px solid #e4ded2; border-radius: 10px; background-color: #fff; }
+.org-lista-persona > div { flex: 1 1 180px; }
+.org-lista-persona h3 { margin-bottom: 4px; }
+.org-lista-persona p { margin-bottom: 7px; color: #5b687b; font-size: 11px; }
+
+.org-guia { margin-bottom: 20px; padding: 24px; border: 1px solid #e4d6bd; border-radius: 12px; background-color: #eee6d7; }
+.org-guia .etiqueta { margin-bottom: 15px; }
+.org-guia h2 { margin-bottom: 20px; font-size: 26px; }
+.org-guia ol, .org-guia ul { padding-left: 18px; }
+.org-guia li, .org-guia p { margin-bottom: 15px; color: #4c5360; font-size: 12px; line-height: 1.8; }
+.org-guia a { color: #254b76; font-size: 12px; font-weight: bold; }
+
+/* Formularios y mensajes. */
+.org-tarjeta { margin-bottom: 22px; border: 1px solid #e0d8ca; border-radius: 12px; background-color: #fff; }
+.org-tarjeta > .card-body { padding: 26px; }
+.org-tarjeta h2 { margin-bottom: 12px; }
+.org-campo { margin-bottom: 18px; }
+.org-pagina textarea.form-control { min-height: 105px; }
+.org-acciones { display: flex; flex-wrap: wrap; gap: 10px; }
+.org-mensaje { margin: 15px 0; color: #254b76; font-size: 13px; font-weight: bold; }
+.org-mensaje:empty { margin: 0; }
+.org-resultado { overflow-wrap: anywhere; }
+.org-mini-publicacion { margin-bottom: 20px; padding: 22px; border: 1px solid #b9cabd; border-left: 4px solid #497558; border-radius: 10px; background-color: #f2f7f2; }
+.org-mini-publicacion p { color: #3c5545; font-size: 12px; }
+.org-mini-publicacion h3 { margin-bottom: 14px; }
+
+.org-aviso { margin: 0 0 22px; padding: 16px 20px; border: 1px solid #e4d6bd; border-left: 3px solid #b9955d; border-radius: 8px; background-color: #faf5ea; color: #65502e; font-size: 12px; }
+.org-aclaracion { color: #5b687b; font-size: 12px; }
+.org-demo { margin: 28px 0 0; padding-top: 19px; border-top: 1px solid #dcd4c6; color: #5b687b; font-size: 11px; }
+
+/* Proyectos publicados. */
+.org-proyecto { margin-bottom: 20px; padding: 27px; border: 1px solid #e0d8ca; border-left: 4px solid #b9955d; border-radius: 10px; background-color: #fff; }
+.org-proyecto-superior, .org-proyecto-pie { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.org-proyecto-superior { margin-bottom: 18px; }
+.org-codigo { margin: 0; color: #6c5838; font-size: 10px; font-weight: bold; letter-spacing: 1.5px; }
+.org-proyecto h2 { margin-bottom: 14px; font-size: 27px; }
+.org-proyecto h3 { margin-bottom: 8px; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; }
+.org-proyecto .row p { margin-bottom: 20px; color: #5b687b; font-size: 12px; }
+.org-datos-proyecto { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 24px; }
+.org-datos-proyecto span { padding: 5px 10px; border: 1px solid #dce1e7; border-radius: 5px; background-color: #f3f5f8; color: #435770; font-size: 11px; }
+.org-proyecto-pie { padding-top: 15px; border-top: 1px solid #eae5dc; }
+.org-proyecto-pie p { margin: 0; color: #6c5838; font-size: 12px; }
+.org-estado { display: inline-block; margin: 0; padding: 4px 9px; border: 1px solid #dbc9a8; border-radius: 5px; background-color: #f6eedf; color: #6a5128; font-size: 10px; font-weight: bold; }
+.org-estado-aprobado { border-color: #a9c2b0; background-color: #edf5ef; color: #2b603b; }
+.org-estado-cerrado { border-color: #cbd1da; background-color: #f0f2f6; color: #4d5a6e; }
+
+/* Postulaciones: el contenedor conserva el desplazamiento en móvil. */
+.org-filtro { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; margin-bottom: 18px; }
+.org-filtro > div { max-width: 100%; }
+.org-filtro .org-descripcion { margin-bottom: 0; }
+.org-tabla-contenedor { max-width: 100%; overflow-x: auto; }
+.org-tabla { width: 100%; min-width: 680px; border-collapse: collapse; }
+.org-tabla th, .org-tabla td { padding: 17px 12px; border-bottom: 1px solid #e6e1d7; text-align: left; vertical-align: middle; font-size: 12px; }
+.org-tabla thead th { background-color: #f4f1ea; color: #59616d; font-size: 10px; letter-spacing: 0.7px; }
+.org-tabla tbody th { font-weight: normal; }
+.org-tabla caption { padding: 14px 0 0; color: #5b687b; font-size: 11px; caption-side: bottom; }
+.org-secundario { display: block; margin-top: 4px; color: #5b687b; font-size: 11px; }
+.org-enlace-tabla { color: #254b76; font-size: 12px; font-weight: bold; }
+.org-vacio { padding: 28px; color: #5b687b; text-align: center; }
+
+/* Revisión y perfil. */
+.org-encabezado-postulante { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; margin-bottom: 20px; }
+.org-identidad .etiqueta { margin-bottom: 5px; }
+.org-identidad h2 { margin-bottom: 5px; }
+.org-identidad p { margin-bottom: 0; }
+.org-proyecto-elegido { padding: 13px 15px; border-radius: 6px; background-color: #f4f1ea; font-size: 13px; }
+.org-postulante .row p { color: #5b687b; font-size: 13px; }
+.org-postulante h3 { margin-top: 17px; margin-bottom: 10px; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; }
+.org-decision { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 16px; padding-top: 20px; border-top: 1px solid #e6e1d7; }
+.org-decision .form-label { width: 100%; margin-bottom: 0; }
+.org-decision .form-select { flex: 1 1 220px; width: auto; min-width: 0; max-width: 100%; }
+.org-resumen-perfil { margin-bottom: 22px; padding: 27px; border: 1px solid #394e69; border-top: 4px solid #b9955d; border-radius: 12px; background-color: #152b46; color: #d5deea; }
+.org-avatar-grande { width: 67px; height: 67px; margin-bottom: 25px; background-color: #ddc398; font-family: Georgia, serif; font-weight: normal; font-size: 31px; }
+.org-resumen-perfil .etiqueta { margin-bottom: 15px; color: #e0c795; }
+.org-resumen-perfil h2 { color: #fff; }
+.org-resumen-perfil p { font-size: 12px; }
+.org-tipo-perfil { color: #efdab2; }
+.org-contacto { margin-top: 25px; padding-top: 20px; border-top: 1px solid #52637a; }
+.org-contacto p { margin-bottom: 10px; overflow-wrap: anywhere; }
