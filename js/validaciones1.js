@@ -81,18 +81,33 @@ function actualizarPerfil() {
 
     document.getElementById("mensaje-ingreso").innerHTML = "";
 }
-
-// Comprueba que el formulario tenga datos; no autentica usuarios.
 function validarIngreso() {
     let perfil = document.getElementById("perfil").value;
     let usuario = document.getElementById("usuario").value;
     let clave = document.getElementById("clave-ingreso").value;
 
-    if (perfil != "estudiante" && perfil != "organizacion" && perfil != "universidad") {
-        document.getElementById("mensaje-ingreso").innerHTML = "Selecciona uno de los tres perfiles disponibles.";
+    if (perfil != "estudiante" &&
+        perfil != "organizacion" &&
+        perfil != "universidad") {
+
+        document.getElementById("mensaje-ingreso").innerHTML =
+            "Selecciona uno de los tres perfiles disponibles.";
+
     } else if (estaVacio(usuario) || estaVacio(clave)) {
-        document.getElementById("mensaje-ingreso").innerHTML = "Completa el usuario y la contraseña. Los campos no pueden contener solo espacios.";
-    } else {
-        document.getElementById("mensaje-ingreso").innerHTML = "Formulario completo. Esta demostración no verifica cuentas reales ni inicia una sesión.";
+
+        document.getElementById("mensaje-ingreso").innerHTML =
+            "Completa el usuario y la contraseña.";
+
+    } else if (perfil == "estudiante") {
+
+        window.location.href = "paginas/panel-estudiante.html";
+
+    } else if (perfil == "organizacion") {
+
+        window.location.href = "paginas/organizacion-panel.html";
+
+    } else if (perfil == "universidad") {
+
+        window.location.href = "paginas/universidad-panel.html";
     }
 }
