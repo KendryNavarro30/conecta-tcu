@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conecta TCU: gestión de solicitudes y aprobación de proyectos de trabajo comunal universitario.">
+  <title>Panel de la universidad | Conecta TCU</title>
+  <link rel="stylesheet" href="../css/universidad.css">
+  <script src="../js/universidad.js" defer></script>
+</head>
+<body data-pagina="panel">
+<header class="barra-superior">
+  <div class="contenedor barra-interior">
+    <a class="marca" href="../index.html" aria-label="Conecta TCU, ir al inicio">Conecta <span>TCU</span></a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="universidad-panel.html" class="activo" aria-current="page">Panel</a>
+      <a href="universidad-solicitudes.html">Solicitudes</a>
+      <a href="universidad-perfil.html">Mi perfil</a>
+      <a href="universidad-proyectos-aprobados.html">Proyectos aprobados</a>
+      <a href="../index.html">Inicio</a>
+      <a href="../login.html">Volver al acceso</a>
+    </nav>
+    <div class="acciones-cabecera"><span class="sello">Universidad</span></div>
+  </div>
+</header>
+<section class="hero"><div class="contenedor hero-interior">
+  <div><span class="etiqueta">ESPACIO DE LA UNIVERSIDAD</span>
+    <h1>Acompañamos proyectos que generan impacto.</h1>
+    <p>Consulta las solicitudes de estudiantes, revisa propuestas y registra una decisión clara para cada proyecto.</p>
+    <div class="botones"><a class="boton boton-dorado" href="universidad-solicitudes.html">Ver solicitudes</a></div>
+  </div>
+  <aside class="hero-tarjeta"><span class="etiqueta">GESTIÓN DE SOLICITUDES</span>
+    <div class="destacado-titulo">Todo comienza con una buena revisión.</div>
+    <p>Desde este espacio puedes organizar el trabajo de la universidad.</p>
+    <ul><li><strong>Ver:</strong> solicitudes pendientes y resueltas.</li>
+      <li><strong>Revisar:</strong> actividades y documentos indicados.</li>
+      <li><strong>Decidir:</strong> aprobar o rechazar con observaciones.</li>
+    </ul></aside>
+</div></section>
+<main class="contenedor seccion" id="contenido">
+<div class="encabezado-seccion"><div><span class="etiqueta">PANEL PRINCIPAL</span>
+  <h2 class="titulo-elegante">Resumen de solicitudes</h2>
+  <p id="nombreUniversidad">Universidad</p>
+</div><span class="aviso-ejemplo">Datos de ejemplo para probar las pantallas</span></div>
+<section class="tarjetas-estadisticas" aria-label="Resumen estadístico">
+  <div class="estadistica"><strong class="valor" id="total">0</strong><span class="descripcion">Solicitudes recibidas</span></div>
+  <div class="estadistica"><strong class="valor" id="pendientes">0</strong><span class="descripcion">Pendientes</span></div>
+  <div class="estadistica"><strong class="valor" id="aprobadas">0</strong><span class="descripcion">Aprobadas</span></div>
+  <div class="estadistica"><strong class="valor" id="rechazadas">0</strong><span class="descripcion">Rechazadas</span></div>
+</section>
+<section class="panel"><div class="encabezado-seccion"><div>
+  <h3>Solicitudes recientes</h3><p>Abre una solicitud para revisar su información.</p>
+</div><a class="boton boton-contorno boton-pequeno" href="universidad-solicitudes.html">Ver todas</a></div>
+ <div class="tabla-contenedor"><table class="tabla"><thead>
+  <tr><th>N.º</th><th>Estudiante</th><th>Proyecto</th>
+    <th>Fecha</th><th>Estado</th>
+    <th>Acción</th></tr></thead>
+    <tbody id="tablaPanel"></tbody></table></div>
+ <div id="panelVacio" class="mensaje info oculto">No hay solicitudes para el nombre de universidad configurado. Puedes editarlo en Mi perfil.</div>
+</section>
+<div class="panel-acciones"><a class="boton boton-azul" href="universidad-solicitudes.html">Gestionar solicitudes</a>
+  <a class="boton boton-contorno" href="universidad-proyectos-aprobados.html">Proyectos aprobados</a>
+  <a class="boton boton-contorno" href="universidad-perfil.html">Editar perfil</a></div>
+</main>
+<footer class="pie-pagina"><div class="contenedor pie-interior"><div>
+  <strong>Conecta TCU</strong> · Tecnología con propósito social.</div>
+  <div>Proyecto académico · <a href="../index.html">Volver al inicio</a></div></div></footer>
+</body>
+</html>

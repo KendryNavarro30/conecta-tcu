@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conecta TCU: gestión de solicitudes y aprobación de proyectos de trabajo comunal universitario.">
+  <title>Solicitar aprobación | Conecta TCU</title>
+  <link rel="stylesheet" href="../css/universidad.css">
+  <script src="../js/universidad.js" defer></script>
+</head>
+<body data-pagina="solicitud">
+<header class="barra-superior">
+  <div class="contenedor barra-interior">
+    <a class="marca" href="../index.html" aria-label="Conecta TCU, ir al inicio">Conecta <span>TCU</span></a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="panel-estudiante.html">Mi panel</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="solicitar-aprobacion.html" class="activo" aria-current="page">Solicitar aprobación</a>
+      <a href="estado-solicitud.html">Mi solicitud</a>
+    </nav>
+    <div class="acciones-cabecera"><a class="boton boton-azul boton-pequeno" href="../login.html">Ingresar</a></div>
+  </div>
+</header>
+<section class="hero"><div class="contenedor hero-interior">
+  <div><span class="etiqueta">SOLICITUD DEL ESTUDIANTE</span><h1>Da el siguiente paso con tu TCU.</h1><p>Completa los datos de tu propuesta para que la universidad pueda revisarla y comunicarte su decisión.</p><div class="botones"><a class="boton boton-dorado" href="estado-solicitud.html">Consultar mi solicitud</a></div></div>
+  <aside class="hero-tarjeta"><span class="etiqueta">ASÍ COMIENZA LA SOLICITUD</span><div class="destacado-titulo">Una propuesta clara. Un proceso más sencillo.</div><p>Antes de enviarla, revisa que los datos coincidan con el proyecto al que deseas postularte.</p><ul><li><strong>1.</strong> Completa tus datos y los del proyecto.</li><li><strong>2.</strong> Indica las actividades y el documento de apoyo.</li><li><strong>3.</strong> Consulta el estado de la solicitud.</li></ul></aside>
+</div></section>
+<main class="contenedor seccion" id="contenido">
+<div class="encabezado-seccion"><div><span class="etiqueta">FORMULARIO</span><h2 class="titulo-elegante">Solicitar aprobación</h2><p>Los campos marcados con * son obligatorios.</p></div></div>
+<div class="cuadricula cuadricula-lateral">
+  <section class="panel" aria-label="Formulario de aprobación">
+    <form id="formularioSolicitud" class="formulario">
+      <div class="campo"><label for="estudiante">Nombre completo *</label><input id="estudiante" name="estudiante" required maxlength="100" placeholder="Tu nombre y apellidos"></div>
+      <div class="campo"><label for="correo">Correo electrónico *</label><input id="correo" name="correo" type="email" required maxlength="100" placeholder="nombre@correo.com"></div>
+      <div class="campo"><label for="universidad">Universidad *</label><select id="universidad" name="universidad" required><option value="">Selecciona una universidad</option><option>Universidad Fidélitas</option><option>Universidad de Costa Rica</option><option>Universidad Nacional</option><option>Tecnológico de Costa Rica</option><option>Universidad Latina</option><option>Otra universidad</option></select></div>
+      <div class="campo"><label for="carrera">Carrera *</label><input id="carrera" name="carrera" required maxlength="100" placeholder="Ej. Ingeniería en Sistemas"></div>
+      <div class="campo"><label for="proyecto">Nombre del proyecto *</label><input id="proyecto" name="proyecto" required maxlength="120" placeholder="Ej. Sistema de inventario"></div>
+      <div class="campo"><label for="organizacion">Organización beneficiada *</label><input id="organizacion" name="organizacion" required maxlength="120" placeholder="Nombre de la organización"></div>
+      <div class="campo campo-completo"><label for="actividades">Actividades que realizarás *</label><textarea id="actividades" name="actividades" required maxlength="1500" placeholder="Describe de manera sencilla qué harás y cómo ayudarás a la organización."></textarea></div>
+      <div class="campo"><label for="horas">Horas estimadas de TCU *</label><input id="horas" name="horas" type="number" min="1" max="1000" required placeholder="Ej. 150"></div>
+      <div class="campo"><label for="documento">Documentos de apoyo (opcionales)</label><input id="documento" name="documento" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple><small class="ayuda">Demostración: solo se guardan los nombres de los archivos, no su contenido.</small></div>
+      <div class="campo campo-completo"><label class="comprobacion"><input type="checkbox" id="confirmar" required> Confirmo que la información ingresada es correcta. *</label></div>
+      <div class="campo campo-completo"><button class="boton boton-azul" type="submit">Enviar solicitud</button></div>
+    </form>
+    <div id="mensajeSolicitud" class="oculto" role="status" aria-live="polite"></div>
+    <a id="verEstado" href="estado-solicitud.html" class="boton boton-dorado oculto" tabindex="-1">Ver el estado de mi solicitud</a>
+  </section>
+  <aside class="panel panel-crema"><h3>Antes de enviar</h3><ol class="pasos"><li>Verifica el nombre de tu universidad.</li><li>Explica qué trabajo vas a desarrollar.</li><li>Revisa tu correo; lo necesitarás para consultar el estado.</li></ol><p class="resumen" style="margin-top:20px">Esta pantalla es una demostración académica. No envía correos ni archivos a una universidad real.</p></aside>
+</div>
+</main>
+<footer class="pie-pagina"><div class="contenedor pie-interior"><div><strong>Conecta TCU</strong> · Tecnología con propósito social.</div><div>Proyecto académico · <a href="../index.html">Volver al inicio</a></div></div></footer>
+</body>
+</html>
